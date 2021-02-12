@@ -1,5 +1,5 @@
 const timer = document.getElementById('stopwatch');
-
+// below codes desn't require comments to explain anymore, it's pretty simple.
 var startTime;
 var updatedTime;
 var difference;
