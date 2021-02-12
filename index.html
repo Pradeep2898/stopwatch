@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Timer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    @font-face {
+        font-family: ledFont;
+        src: url(digital-7.ttf);
+    }
+</style>
+
+<body style="background-color: black; color: aliceblue; text-align: center; padding: 10%;">
+    <h1 class="display-1" id="stopwatch" style="font-family: ledFont;">
+        00 : 00 : 00 : 000
+    </h1>
+    <hr>
+    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="start" autocomplete="off">
+        <label class="btn btn-outline-light shadow p-3" for="btnradio1" onclick="startTimer()">Start</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="pause" autocomplete="off">
+        <label class="btn btn-outline-light shadow p-3" for="btnradio2" onclick="stopTimer()">Pause</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="reset" autocomplete="off">
+        <label class="btn btn-outline-light shadow p-3" for="btnradio3" onclick="resetTimer()">Reset</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="history" autocomplete="off">
+        <label class="btn btn-outline-light shadow p-3" for="btnradio4"
+            onclick="location.href = 'history.html';">History</label>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
